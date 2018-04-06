@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html>
+<?php
+    $lang = isset($_COOKIE['lang']) ? $_COOKIE['lang'] : 'en';
+?>
+<html lang="<?php echo $lang; ?>">
   <head>
+    <?php
+        /**
+        *  try to get the language from the cookie
+        *  if its not set default it to english
+        **/
+
+        getTranslations($lang);
+
+    ?>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Smartways Web Development & Concultancy</title>
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="public/styles/main.css?v=5">
-    <?php
-      if(isset($_COOKIE['lang']) && $_COOKIE['lang'] === 'ar'):
-    ?>
+      <title><?php echo translate('website-title-label'); ?></title>
+      <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <?php if($lang == 'ar'): ?>
         <link rel="stylesheet" type="text/css" href="public/styles/arabic.css">
-    <?php
-      endif;
-    ?>
+    <?php  endif; ?>
+    <link rel="stylesheet" type="text/css" href="public/styles/main.css?v=5">
+    <link href="public\styles\fontawesome-free-5.0.9\web-fonts-with-css\css\fontawesome-all.css"
+
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Playfair+Display" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <div class="main">
       <div class="nav">
         <div class="nav__container container">
-          <div class="nav__mobile"> 00961 3 765495 </div>
-          <div class="nav__language"> Language </div>
+          <div class="nav__mobile  fas fa-envelope"> 00961 3 765495 </div>
+          <div class="nav__language" id="jsToggleLanguage"><?php echo translate('label-language'); ?></div>
         </div>
       </div>
       <div class="header">
@@ -34,22 +44,22 @@
           <nav class="header__menu">
             <ul class="menu">
               <li class="menu__item">
-                <a href="#" class="menu__link" tabindex="0">
+                <a href="#jsAboutUs" class="menu__link jsScrollTo" tabindex="0">
                   About Us
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link" tabindex="1">
-                  What We Do
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link" tabindex="2">
+                <a href="#jsServices" class="menu__link jsScrollTo" tabindex="1">
                   Services
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link" tabindex="3">
+                <a href="#jsWorkWithUs" class="menu__link jsScrollTo" tabindex="2">
+                  Work With Us
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#jsContactUs" class="menu__link jsScrollTo" tabindex="3">
                   Contact Us
                 </a>
               </li>
