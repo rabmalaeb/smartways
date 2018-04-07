@@ -1,9 +1,9 @@
 <div class="page" id="jsServices">
   <div class="page__container container">
-    <h2 class="page__title">Services</h2>
+    <h2 class="page__title"><?php echo translate("label-menu-services"); ?></h2>
     <div class="page__description">
       <p>
-        We Design and Devleop High Level Brands and Digital Platforms from our offices in Beirut, Lebanon:  Our main specialties are Web Sites, Web Applications, Search Engine Optimization (SEO), Ecommerce Applications and  Mobile Apps.
+        <?php echo translate("label-service-description"); ?>
       </p>
     </div>
     <div class="page__service-container">

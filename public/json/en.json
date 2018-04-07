@@ -1,4 +1,10 @@
 [
   {"key": "website-title-label", "value": "Smartways Web Development & Concultancy"},
-  {"key": "label-language", "value": "العربية "}
+  {"key": "label-language", "value": "العربية "},
+  {"key": "label-menu-services", "value": "Services"},
+  {"key": "label-menu-workwithus", "value": "Work With Us"},
+  {"key": "label-menu-contactus", "value": "Contact Us"},
+  {"key": "label-didyoulike", "value": "Did you like what we have to offer? Let us know by leaving us a message"},
+  {"key": "label-service-description", "value": "We Design and Devleop High Level Brands and Digital Platforms from our offices in Beirut, Lebanon: Our main specialties are Web Sites, Web Applications, Search Engine Optimization (SEO), Ecommerce Applications and Mobile Apps."},
+  {"key": "label-menu-about-us", "value": "About Us"}
 ]

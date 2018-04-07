@@ -16,12 +16,14 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title><?php echo translate('website-title-label'); ?></title>
-      <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <title><?php echo translate('website-title-label'); ?></title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <link rel="stylesheet" type="text/css" href="public/styles/main.css?v=5">
+
     <?php if($lang == 'ar'): ?>
         <link rel="stylesheet" type="text/css" href="public/styles/arabic.css">
     <?php  endif; ?>
-    <link rel="stylesheet" type="text/css" href="public/styles/main.css?v=5">
     <link href="public\styles\fontawesome-free-5.0.9\web-fonts-with-css\css\fontawesome-all.css"
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Playfair+Display" rel="stylesheet">
@@ -45,22 +47,22 @@
             <ul class="menu">
               <li class="menu__item">
                 <a href="#jsAboutUs" class="menu__link jsScrollTo" tabindex="0">
-                  About Us
+                  <?php echo translate('label-menu-about-us'); ?>
                 </a>
               </li>
               <li class="menu__item">
                 <a href="#jsServices" class="menu__link jsScrollTo" tabindex="1">
-                  Services
+                    <?php echo translate('label-menu-services'); ?>
                 </a>
               </li>
               <li class="menu__item">
                 <a href="#jsWorkWithUs" class="menu__link jsScrollTo" tabindex="2">
-                  Work With Us
+                  <?php echo translate('label-menu-workwithus'); ?>
                 </a>
               </li>
               <li class="menu__item">
                 <a href="#jsContactUs" class="menu__link jsScrollTo" tabindex="3">
-                  Contact Us
+                   <?php echo translate('label-menu-contactus'); ?>
                 </a>
               </li>
             </ul>

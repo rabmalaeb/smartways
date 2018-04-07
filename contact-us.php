@@ -9,12 +9,12 @@
 ?>
 <div class="page page_is-last" id="jsContactUs">
   <div class="page__container container">
-    <h2 class="page__title">Contact Us</h2>
+    <h2 class="page__title"><?php echo translate('label-menu-contactus'); ?></h2>
     <page class="page__contact-container">
       <div class="page__form">
         <div class="page__form-description">
           <p>
-          Did you like what we have to offer? Let us know by leaving us a message
+            <?php echo translate('label-didyoulike'); ?>
           </p>
         </div>
         <form class="form">
