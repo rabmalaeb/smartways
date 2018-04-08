@@ -1,9 +1,9 @@
 <div class="page" id="jsServices">
   <div class="page__container container">
-    <h2 class="page__title"><?php echo translate("label-menu-services"); ?></h2>
+    <h2 class="page__title"><?php echo translate("labelmenuservices"); ?></h2>
     <div class="page__description">
       <p>
-        <?php echo translate("label-service-description"); ?>
+        <?php echo translate("labelservicedescription"); ?>
       </p>
     </div>
     <div class="page__service-container">

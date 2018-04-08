@@ -8,7 +8,9 @@
    $response = json_decode(file_get_contents('public/json/' . $lang . '.json'));
    $result = array();
    foreach ( $response as $languageVar ) {
-  		$result[$languageVar->key] = $languageVar->value;
+     foreach ( $languageVar as $key => $value ) {
+       $result[$key] = $value;
+     }
   	}
     $_SESSION["langData"] = $result;
     return $result;

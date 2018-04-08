@@ -140,6 +140,16 @@ body :focus {
   z-index: 1;
 }
 
+.header_is-fixed {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+  height: 70px;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -191,6 +201,10 @@ body :focus {
   align-items: center;
 }
 
+.menu__link_is-selected {
+  border-bottom: 1px solid #000;
+}
+
 .menu__item:last-child .menu__link {
   padding-right: 0px;
 }
@@ -222,6 +236,10 @@ body :focus {
   min-height: 300px;
   z-index: 1;
   background: #fff;
+  padding-top: 100px;
+}
+
+.page_is-first {
   padding-top: 30px;
 }
 
@@ -296,6 +314,12 @@ body :focus {
 
 .contact-box {
   padding: 20px;
+}
+
+.contact-box__website {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .contact-box__title {
@@ -400,6 +424,21 @@ body :focus {
   height: 100%;
   padding: 10px;
   border: 1px solid rgba(0,0,0,0.3);
+  background: #fff;
+}
+
+.input-item_is-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+}
+
+.input-item_is-select option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
 }
 
 .input-item_is-textarea {
@@ -416,6 +455,8 @@ body :focus {
 
 .button-item:hover {
   background: rgba(0,0,0,1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .page__footer {

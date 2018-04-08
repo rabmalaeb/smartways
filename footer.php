@@ -38,6 +38,6 @@
 </footer>
 
 <script src="public/javascript/jquery-3.3.1.js"></script>
-<script src="public/javascript/main.js"></script>
+<script src="public/javascript/main.js?v=4"></script>
 </body>
 </html>
