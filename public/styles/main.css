@@ -159,11 +159,12 @@ body :focus {
 }
 
 .header__menu {
-
+  height: 100%;
 }
 
 .menu {
   display: flex;
+  height: 100%;
 }
 
 .menu__item {
@@ -185,14 +186,35 @@ body :focus {
   cursor: pointer;
   transition: color .4s;
   font-size: 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .menu__item:last-child .menu__link {
   padding-right: 0px;
 }
 
-.menu__link:hover {
-  color: rgba(0,0,0,1);
+.menu__link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+.menu__link:hover:after  {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .page {

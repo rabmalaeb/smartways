@@ -1,9 +1,9 @@
 <?php
 
-/**
+/*s
 * get the language data from the ar or en json files in the public/json folder
 * set the langData COOKIE with the language data
-**/
+*/
  function getTranslations($lang) {
    $response = json_decode(file_get_contents('public/json/' . $lang . '.json'));
    $result = array();
@@ -14,11 +14,11 @@
     return $result;
  }
 
- /**
+ /*
  * return the value of the translation from the
  * cookie already saved in getTranslations function
  *
- **/
+ */
  function translate($key) {
    if(isset($_SESSION['langData'])) {
      $langData = $_SESSION['langData'];

@@ -19,7 +19,7 @@
     <title><?php echo translate('website-title-label'); ?></title>
     <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 
-    <link rel="stylesheet" type="text/css" href="public/styles/main.css?v=5">
+    <link rel="stylesheet" type="text/css" href="public/styles/main.css?v=6">
 
     <?php if($lang == 'ar'): ?>
         <link rel="stylesheet" type="text/css" href="public/styles/arabic.css">
