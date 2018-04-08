@@ -178,7 +178,8 @@ body :focus {
 }
 
 .menu__item {
-  margin: 0px 10px
+  margin: 0px 10px;
+  width: 100px;
 }
 
 .menu__item:last-child {
@@ -199,6 +200,7 @@ body :focus {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .menu__link_is-selected {

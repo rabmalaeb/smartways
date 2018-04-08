@@ -1,4 +1,8 @@
 $(function() {
+
+  checkHeaderPosition();
+  checkMenuPosition();
+
   $(".jsScrollTo").on('click', function(e) {
        e.preventDefault();
        var target = $(this).attr('href');
@@ -8,7 +12,6 @@ $(function() {
     });
 
     $("#jsToggleLanguage").on('click', function(){
-        console.log($(this).html());
       if($(this).html() === "English") {
          changeLanguage('en');
       } else {
@@ -17,28 +20,31 @@ $(function() {
     });
 
     $(window).on("scroll", function(e) {
-      var container = $('html');
-      if (container.scrollTop() > 580) {
+      checkHeaderPosition();
+      checkMenuPosition();
+    });
+
+    function checkHeaderPosition() {
+      if ($('html').scrollTop() > 580) {
         $(".header").addClass("header_is-fixed");
       } else {
         $(".header").removeClass("header_is-fixed");
       }
+    }
 
-      $('.menu__link').each(function() {
-        $(this).removeClass('menu__link_is-selected');
-        var target = $(this).attr('href');
-        if(isVisible($(target))){
+    function checkMenuPosition() {
+      $(".menu__link").each(function() {
+        if($('html').scrollTop() >= $($(this).attr('href')).position().top){
+          clearMenus();
           $(this).addClass('menu__link_is-selected')
         }
       })
-    });
+    }
 
-    function isVisible(element) {
-      var elementTop = $(element).offset().top;
-      var elementBottom = elementTop + $(element).outerHeight();
-      var viewportTop = $(window).scrollTop();
-      var viewportBottom = viewportTop + $(window).height();
-      return elementBottom > viewportTop && elementTop < viewportBottom;
+    function clearMenus() {
+      $('.menu__link').each(function() {
+        $(this).removeClass('menu__link_is-selected');
+      })
     }
 
     function changeLanguage(lang) {
