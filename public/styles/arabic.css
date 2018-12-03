@@ -16,3 +16,13 @@ html, body {
   margin-left: 0px;
   margin-right: 40px;
 }
+
+.page__form {
+  margin-right: 0px;
+  margin-left: 100px;
+}
+
+.service {
+  margin-right: 0px;
+  margin-left: 20px;
+}

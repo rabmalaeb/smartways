@@ -1,10 +1,11 @@
 [
-  {"key": "label-language", "value": "English"},
-  {"key": "label-menu-services", "value": "الخدمات"},
+  {"key": "website-title-label", "value": "Smartways Web Development & Concultancy"},
+  {"key": "label-language", "value": "العربية "},
+  {"key": "label-menu-services", "value":  "الخدمات"},
   {"key": "label-menu-workwithus", "value": "اعمل معنا"},
   {"key": "label-menu-contactus", "value": "اتصل بنا"},
-  {"key": "label-service-description", "value": "اتصل بنا"},
+  {"key": "label-didyoulike", "value": "هل أعجبك ما نقدمه؟ اسمحوا لنا أن نعرف من خلال ترك لنا رسالة"},
   {"key": "label-service-description", "value": "نقوم بتصميم وتطبيق العلامات التجارية عالية المستوى والمنصات الرقمية من مكاتبنا في بيروت ، لبنان. تخصصاتنا الرئيسية هي مواقع الويب ، تطبيقات الويب ، تحسين محركات البحث (SEO) ، تطبيقات التجارة الإلكترونية وتطبيقات الجوال."},
-  {"key": "label-menu-about-us", "value": "عن الشركة"},
-  {"key": "label-didyoulike", "value": "هل أعجبك ما نقدمه؟ اسمحوا لنا أن نعرف من خلال ترك لنا رسالة"}
+  {"key": "label-menu-about-us", "value": "عن الشركة"}
 ]
+
