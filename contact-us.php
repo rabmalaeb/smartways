@@ -9,12 +9,12 @@
 ?>
 <div class="page page_is-last" id="jsContactUs">
   <div class="page__container container">
-    <h2 class="page__title"><?php echo translate('label-menu-contactus'); ?></h2>
+    <h2 class="page__title"><?php echo translate('labelmenucontactus'); ?></h2>
     <page class="page__contact-container">
       <div class="page__form">
         <div class="page__form-description">
           <p>
-            <?php echo translate('label-didyoulike'); ?>
+            <?php echo translate('labeldidyoulike'); ?>
           </p>
         </div>
         <form class="form">
@@ -46,7 +46,7 @@
             <div class="form-item">
               <div class="form-item__label far fa-address-card"></div>
               <div class="form-item__input">
-                <select class="input-item" placeholder="Subject" >
+                <select class="input-item input-item_is-select" placeholder="Subject" >
                   <option value=""></option>
                   <?php foreach ($subjectList as $subject): ?>
                     <option value="<?php echo $subject ?>"><?php echo $subject ?></option>
@@ -57,7 +57,7 @@
             <div class="form-item">
               <div class="form-item__label fas fa-globe"></div>
               <div class="form-item__input">
-                <select class="input-item" placeholder="Subject" >
+                <select class="input-item input-item_is-select" placeholder="Subject" >
                   <option value=""></option>
                   <?php foreach ($countries as $country):?>
                     <option value="<?php echo $country['code'] ?>"><?php echo $country['name'] ?></option>
@@ -85,6 +85,9 @@
       </div>
       <div class="page__contact-box">
         <div class="contact-box">
+          <div class="contact-box__website">
+            Smartways
+          </div>
           <div class="contact-box__title">
             Bayssour, Radar Street
           </div>

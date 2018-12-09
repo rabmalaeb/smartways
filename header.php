@@ -16,10 +16,10 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><?php echo translate('website-title-label'); ?></title>
+    <title><?php echo translate('websitetitlelabel'); ?></title>
     <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 
-    <link rel="stylesheet" type="text/css" href="public/styles/main.css?v=5">
+    <link rel="stylesheet" type="text/css" href="public/styles/main.css?v=6">
 
     <?php if($lang == 'ar'): ?>
         <link rel="stylesheet" type="text/css" href="public/styles/arabic.css">
@@ -35,7 +35,7 @@
       <div class="nav">
         <div class="nav__container container">
           <div class="nav__mobile  fas fa-envelope"> 00961 3 765495 </div>
-          <div class="nav__language" id="jsToggleLanguage"><?php echo translate('label-language'); ?></div>
+          <div class="nav__language" id="jsToggleLanguage"><?php echo translate('labellanguage'); ?></div>
         </div>
       </div>
       <div class="header">
@@ -46,23 +46,23 @@
           <nav class="header__menu">
             <ul class="menu">
               <li class="menu__item">
-                <a href="#jsAboutUs" class="menu__link jsScrollTo" tabindex="0">
-                  <?php echo translate('label-menu-about-us'); ?>
+                <a href="#jsAboutUs" id="jsMenuAbout" class="menu__link jsScrollTo" tabindex="0">
+                  <?php echo translate('labelmenuaboutus'); ?>
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#jsServices" class="menu__link jsScrollTo" tabindex="1">
-                    <?php echo translate('label-menu-services'); ?>
+                <a href="#jsServices" id="jsMenuServices" class="menu__link jsScrollTo" tabindex="1">
+                    <?php echo translate('labelmenuservices'); ?>
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#jsWorkWithUs" class="menu__link jsScrollTo" tabindex="2">
-                  <?php echo translate('label-menu-workwithus'); ?>
+                <a href="#jsWorkWithUs" id="jsMenuWork" class="menu__link jsScrollTo" tabindex="2">
+                  <?php echo translate('labelmenuworkwithus'); ?>
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#jsContactUs" class="menu__link jsScrollTo" tabindex="3">
-                   <?php echo translate('label-menu-contactus'); ?>
+                <a href="#jsContactUs" id="jsMenuContact" class="menu__link jsScrollTo" tabindex="3">
+                   <?php echo translate('labelmenucontactus'); ?>
                 </a>
               </li>
             </ul>
