@@ -17,7 +17,7 @@ $(function () {
   })
 
   function changeLanguage (lang) {
-    var location = 'http://localhost/smartways/change-language.php?lang=' + lang
+    var location = 'http://192.168.64.2/smartways/change-language.php?lang=' + lang
     window.location = location
   }
 })

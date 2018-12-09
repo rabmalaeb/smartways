@@ -179,7 +179,7 @@ body :focus {
 
 .menu__item {
   margin: 0px 10px;
-  width: 100px;
+  width: auto;
 }
 
 .menu__item:last-child {
